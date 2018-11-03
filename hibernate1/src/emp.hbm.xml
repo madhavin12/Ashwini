@@ -4,13 +4,14 @@
  "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">  
   
  <hibernate-mapping>  
-  <class name="hibernate1.Emp" table="emp10">  
-    <id name="id">  
+  <class name="hibernate1.Emp" table="emp101">  
+    <id name="Id">  
      <generator class="assigned"></generator>  
     </id>  
             
     <property name="firstname"></property>  
     <property name="lastname"></property>  
+    <property name="Address"></property>
             
   </class>  
             

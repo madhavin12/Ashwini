@@ -1,14 +1,14 @@
 package hibernate1;
 
 public class Emp {
-	private int id;  
+	private int Id;  
 	private String firstname,lastname;  
-	  
+	  private String Address;
 	public int getId() {  
-	    return id;  
+	    return Id;  
 	}  
 	public void setId(int id) {  
-	    this.id = id;  
+	    this.Id = Id;  
 	}  
 	public String getFirstname() {  
 	    return firstname;  
@@ -22,5 +22,11 @@ public class Emp {
 	public void setLastname(String lastname) {  
 	    this.lastname = lastname;  
 	}  
+	public String getAddress() {  
+	    return Address;  
 	}  
+	public void setAddress(String Address) {  
+	    this.Address = Address;  
+	}  
+}
 

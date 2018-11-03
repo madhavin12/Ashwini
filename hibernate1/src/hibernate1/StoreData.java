@@ -17,17 +17,18 @@ public class StoreData {
 		    //creating transaction object  
 		    Transaction t=session.beginTransaction();  
 		          
-		    Emp3 e1=new Emp3();  
+		    Emp e1=new Emp();  
 		   e1.setId(115);  
-		    e1.setname("sonoo");  
-		    e1.setsal(2900);  
+		    e1.setFirstname("sonoo");  
+		    e1.setLastname("banu"); 
+		    e1.setAddress("bangalore");
 		      
 		    session.persist(e1);
 		    
 
 		    
 			
-				Query qry = session.createQuery("select min(sal) from Emp3");
+				Query qry = session.createQuery("select id from Emp");
 	      
 			List l =qry.list();
 			System.out.println("Total Number Of Records : "+l.size());
@@ -36,9 +37,10 @@ public class StoreData {
 			while(it.hasNext())
 			{
 				Object o = (Object) it.next();
-				System.out.println(" Name : "+e1.getId());
-				System.out.println(" Name : "+e1.getname());
-				System.out.println("lastname : "+e1.getsal());
+				System.out.println(" id : "+e1.getId());
+				System.out.println(" Name : "+e1.getFirstname());
+				System.out.println("lastname : "+e1.getLastname());
+				System.out.println("Address:  " +e1.getAddress());
 				System.out.println("---------------------------");
 
 			}		
