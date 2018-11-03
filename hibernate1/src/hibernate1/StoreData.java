@@ -19,7 +19,7 @@ public class StoreData {
 		          
 		    Emp e1=new Emp();  
 		   e1.setId(115);  
-		    e1.setFirstname("sonoo");  
+		    e1.setFirstname("sonoo1");  
 		    e1.setLastname("banu"); 
 		    e1.setAddress("bangalore");
 		      
@@ -31,7 +31,7 @@ public class StoreData {
 				Query qry = session.createQuery("select id from Emp");
 	      
 			List l =qry.list();
-			System.out.println("Total Number Of Records : "+l.size());
+			System.out.println("Total Number Of Records is : "+l.size());
 			Iterator it = l.iterator();
 
 			while(it.hasNext())
